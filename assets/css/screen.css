@@ -80,32 +80,38 @@ h1, h2, h3,
 h4, h5, h6 {
 	text-rendering: optimizeLegibility;
 	line-height: 1;
-	margin-top: 0;
+	margin-top: 2em;
+	margin-bottom: 0;
 	font-weight: 900;
 }
 
 h1 {
-	font-weight: 400;
+	font-family: Lato;
+	font-weight: 600;
 	font-size: 7rem !important;
 	line-height: 1.2em;
-	letter-spacing: -2px;
-	text-indent: -3px;
-	text-align: center;
+	letter-spacing: -4px;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+h1 b {
+	font-weight: 100;
 }
 
 h2 {
 	font-size: 2.6rem;
 	line-height: 1.8em;
 	letter-spacing: -1px;
-	text-indent: -2px;
+	margin-top: 0;
+	margin-bottom: 0;
 }
 
 h3 {
-	font-size: 1.9rem;
+	font-size: 2.2rem;
 }
 
 h4 {
-	font-size: 1.6rem;
+	font-size: 1.9rem;
 }
 
 h5 {
@@ -117,14 +123,12 @@ h6 {
 }
 
 a {
-	color: #4789ac;
+	color: #666;
 	text-decoration: none;
-	transition: 1s all;
+	border-bottom: 1px dashed #999;
 }
 
 a:hover {
-	text-decoration: none;
-	color: #000;
 }
 
 h2.blog-description {
@@ -132,7 +136,8 @@ h2.blog-description {
 }
 
 h1 a {
-
+	color: #fff !important;
+	border-bottom: 0 none;
 }
 
 h1 a, h2 a, h3 a,
@@ -237,7 +242,9 @@ pre {
 	white-space: pre;
 	overflow: auto;
 	background: #ffffff;
-	box-shadow: 0 2px 3px 0 rgba(0, 0, 0, .1);
+	xbox-shadow: 0 2px 3px 0 rgba(0, 0, 0, .1);
+	border-top: 3px double #aaa;
+	border-bottom: 3px double #aaa;
 }
 
 pre code, tt {
@@ -265,23 +272,50 @@ kbd {
 		0 1px 0 0 #fff inset;
 }
 
-.blog-title {
-	text-shadow: 0 0 5px rgba(0, 0, 0, .4);
+#site-head {
+	background: #444;
+}
+
+#site-head a {
+
+}
+
+.blog-title-wrap {
+	width: 80%;
+	max-width: 1000px;
+	margin: 0 auto;
+	border-bottom: 1px solid #999;
+}
+
+.blog-title a {
+}
+
+#blog-logo {
+	opacity: .5;
+	display: none;
+}
+
+#blog-logo:hover {
+	opacity: .8;
+}
+
+.blog-description-wrap {
+	width: 80%;
+	max-width: 1000px;
+	margin: 0 auto;
 }
 
 .blog-description {
 	font-weight: 100;
-}
-
-.blog-description-wrap {
-	text-align: center;
-	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
+	padding-bottom: .5rem;
 }
 
 main.content {
 	width: 80%;
 	max-width: 1000px;
 	margin: 0 auto;
+	position: relative;
+	top: 6rem;
 }
 
 .post-meta {
@@ -294,16 +328,11 @@ footer.site-footer {
 	top: 4em;
 	text-align: center;
 	font-size: 70%;
-	line-height: 110%;
+	line-height: 170%;
 	padding-bottom: 2em;
 }
 
 section.copyright {
 	position: relative;
 	padding-bottom: 1em;
-}
-
-.blog-title {
-	font-family: Lato;
-	font-weight: 100;
 }
